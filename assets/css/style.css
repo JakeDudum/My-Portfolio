@@ -1,3 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.selfie {
+    height: auto;
+    width: 400px;
+    margin-right: 35px;
+}
+
+.bio {
+    font-size: 22px;
+}
+
 .flip-card {
     position: relative;
     cursor: pointer;
@@ -6,7 +31,6 @@
 }
 
 .middle {
-    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
