@@ -16,7 +16,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <h1 class="display-6">Jake Dudum</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,8 @@
     </nav>
 
     <div class="container">
-        <div id="about" class="jumbotron">
-            <h1 class="display-3">About Me</h1>
+        <div id="about" class="jumbotron pt-1 mt-5">
+            <h1 class="display-4">About Me</h1>
             <hr>
             <img src="assets/images/Selfie.jpg" class="selfie float-left" alt="Jake Dudum Selfie">
             <p class="bio">
@@ -66,84 +66,258 @@
             </p>
         </div>
 
-        <div id="portfolio" class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <img src="assets/images/Where2P.PNG" class="card-img-top" alt="Where2P Site">
-                            <div class="card-body">
-                                <h5 class="card-title">Where2P</h5>
-                                <p class="card-text">An app designed by myself and fellow classmates Darryl, Hallie, and
-                                    Adrienne to help people find a bathroom quick. The app uses multiple API's including
-                                    Google Maps API, Yelp API, and Google Places API in order to help the user find the
-                                    closest bathroom available. The app also features firebase integration for user
-                                    reviews.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row no-gutters">
+            <div id="portfolio" class="jumbotron pt-1 mt-5">
+                <h1 class="display-4">Portfolio</h1>
+                <hr>
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="display-5  text-center">Small Apps</h1>
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card">
+                                            <img src="assets/images/Where2P.PNG" class="card-img-top"
+                                                alt="Where2P Site">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Where2P</h5>
+                                                <p class="card-text">An app designed by myself and fellow classmates
+                                                    Darryl,
+                                                    Hallie, and
+                                                    Adrienne to help people find a bathroom quick. The app uses multiple
+                                                    API's
+                                                    including
+                                                    Google Maps API, Yelp API, and Google Places API in order to help
+                                                    the
+                                                    user
+                                                    find the
+                                                    closest bathroom available. The app also features firebase
+                                                    integration
+                                                    for
+                                                    user
+                                                    reviews.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <img src="assets/images/RPS-Multiplayer.png" class="card-img-top"
+                                                alt="RPS-Multiplayer Site">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RPS-Multiplayer</h5>
+                                                <p class="card-text">Rock, Paper, Scissors Online Multiplayer! Two
+                                                    players
+                                                    are
+                                                    able to
+                                                    play at any time by
+                                                    joining either player 1 or player 2 with a name input. The center of
+                                                    the
+                                                    site
+                                                    features a
+                                                    chat box for the two players to talk to each other as well as for
+                                                    the
+                                                    site
+                                                    to
+                                                    display
+                                                    who has won. Wins and losses for each side are shown below each
+                                                    player's
+                                                    name and
+                                                    are
+                                                    reset to 0 upon a player leaving the game. The online multiplayer
+                                                    component
+                                                    of the
+                                                    site
+                                                    is made possible using Firebase's realtime online
+                                                    database.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <img src="assets/images/RPG.png" class="card-img-top"
+                                                alt="Dragon Ball Z RPG">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Dragon Ball Z RPG</h5>
+                                                <p class="card-text">A website to play a dragon ball z themed webbrowser
+                                                    rpg.
+                                                    There are
+                                                    five characters to choose from and whichever characters are not
+                                                    seleceted
+                                                    are made
+                                                    into enemies to defeat.
+                                                    Every time the user attacks there characters attack power (ap) goes
+                                                    up
+                                                    by
+                                                    its base
+                                                    amount and they recieve damage equal to the enemeies counter attack
+                                                    power
+                                                    (cap) if
+                                                    the enemy is alive after recieving damage. The game is over if the
+                                                    user
+                                                    fails to
+                                                    defeat all
+                                                    enemies and must restart from the beginning. Every character also
+                                                    goes
+                                                    up by
+                                                    one
+                                                    form level,
+                                                    purely for looks, for every enemy the player defeats in true dragon
+                                                    ball
+                                                    fashion.
+                                                </p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="assets/images/RPS-Multiplayer.png" class="card-img-top"
-                                alt="RPS-Multiplayer Site">
-                            <div class="card-body">
-                                <h5 class="card-title">RPS-Multiplayer</h5>
-                                <p class="card-text">Rock, Paper, Scissors Online Multiplayer! Two players are able to
-                                    play at any time by
-                                    joining either player 1 or player 2 with a name input. The center of the site
-                                    features a
-                                    chat box for the two players to talk to each other as well as for the site to
-                                    display
-                                    who has won. Wins and losses for each side are shown below each player's name and
-                                    are
-                                    reset to 0 upon a player leaving the game. The online multiplayer component of the
-                                    site
-                                    is made possible using Firebase's realtime online
-                                    database.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="assets/images/RPG.png" class="card-img-top" alt="Dragon Ball Z RPG">
-                            <div class="card-body">
-                                <h5 class="card-title">Dragon Ball Z RPG</h5>
-                                <p class="card-text">A website to play a dragon ball z themed webbrowser rpg. There are
-                                    five characters to choose from and whichever characters are not seleceted are made
-                                    into enemies to defeat.
-                                    Every time the user attacks there characters attack power (ap) goes up by its base
-                                    amount and they recieve damage equal to the enemeies counter attack power (cap) if
-                                    the enemy is alive after recieving damage. The game is over if the user fails to
-                                    defeat all
-                                    enemies and must restart from the beginning. Every character also goes up by one
-                                    form level,
-                                    purely for looks, for every enemy the player defeats in true dragon ball fashion.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col-12 col-lg-6">
+                        <h1 class="display-5 text-center">Projects</h1>
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card">
+                                            <img src="assets/images/Where2P.PNG" class="card-img-top"
+                                                alt="Where2P Site">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Where2P</h5>
+                                                <p class="card-text">An app designed by myself and fellow classmates
+                                                    Darryl,
+                                                    Hallie, and
+                                                    Adrienne to help people find a bathroom quick. The app uses multiple
+                                                    API's
+                                                    including
+                                                    Google Maps API, Yelp API, and Google Places API in order to help
+                                                    the
+                                                    user
+                                                    find the
+                                                    closest bathroom available. The app also features firebase
+                                                    integration
+                                                    for
+                                                    user
+                                                    reviews.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <img src="assets/images/RPS-Multiplayer.png" class="card-img-top"
+                                                alt="RPS-Multiplayer Site">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RPS-Multiplayer</h5>
+                                                <p class="card-text">Rock, Paper, Scissors Online Multiplayer! Two
+                                                    players
+                                                    are
+                                                    able to
+                                                    play at any time by
+                                                    joining either player 1 or player 2 with a name input. The center of
+                                                    the
+                                                    site
+                                                    features a
+                                                    chat box for the two players to talk to each other as well as for
+                                                    the
+                                                    site
+                                                    to
+                                                    display
+                                                    who has won. Wins and losses for each side are shown below each
+                                                    player's
+                                                    name and
+                                                    are
+                                                    reset to 0 upon a player leaving the game. The online multiplayer
+                                                    component
+                                                    of the
+                                                    site
+                                                    is made possible using Firebase's realtime online
+                                                    database.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <img src="assets/images/RPG.png" class="card-img-top"
+                                                alt="Dragon Ball Z RPG">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Dragon Ball Z RPG</h5>
+                                                <p class="card-text">A website to play a dragon ball z themed webbrowser
+                                                    rpg.
+                                                    There are
+                                                    five characters to choose from and whichever characters are not
+                                                    seleceted
+                                                    are made
+                                                    into enemies to defeat.
+                                                    Every time the user attacks there characters attack power (ap) goes
+                                                    up
+                                                    by
+                                                    its base
+                                                    amount and they recieve damage equal to the enemeies counter attack
+                                                    power
+                                                    (cap) if
+                                                    the enemy is alive after recieving damage. The game is over if the
+                                                    user
+                                                    fails to
+                                                    defeat all
+                                                    enemies and must restart from the beginning. Every character also
+                                                    goes
+                                                    up by
+                                                    one
+                                                    form level,
+                                                    purely for looks, for every enemy the player defeats in true dragon
+                                                    ball
+                                                    fashion.
+                                                </p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
 
         <div id="contact" class="jumbotron mt-4 pt-4">
             <h1 class="display-4">Contact</h1>
+            <hr>
             <div class="row justify-content-around">
                 <div class="col-3">
                     <div class="row justify-content-center">
@@ -197,9 +371,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
