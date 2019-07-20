@@ -57,6 +57,7 @@ body {
 
 .back {
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     border-radius: 25px;
@@ -89,10 +90,19 @@ body {
 
 #email {
     position: absolute;
-    top: 25%;
-    left: 40%;
-    width: 50%;
+    top: -20%;
+    left: 0;
+    width: 100%;
     height: auto;
+}
+
+.card {
+    background-color: grey;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    position: absolute !important;
+    top: 20% !important;
 }
 
 .button {
