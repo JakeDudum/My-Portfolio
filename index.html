@@ -15,15 +15,15 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <h1 class="display-6">Jake Dudum-Full Stack Web Developer</h1>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light row no-gutters justify-content-between">
+        <h1 class="display-6 col-9">Web Dev Portfolio</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mainnav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mainnav col-3 justify-content-end">
                 <li class="nav">
                     <a class="nav-link" href="#about">About</a>
                 </li>
@@ -38,7 +38,7 @@
     </nav>
 
     <div class="container">
-        <div id="about" class="jumbotron pt-1 mt-5">
+        <div id="about" class="jumbotron pt-1 pb-3">
             <h1 class="display-4">About Me</h1>
             <hr>
             <img src="assets/images/Selfie2.PNG" class="selfie float-left" alt="Jake Dudum Selfie">
@@ -57,332 +57,111 @@
         </div>
 
         <div class="row no-gutters">
-            <div id="portfolio" class="jumbotron pt-1 mt-5">
+            <div id="portfolio" class="jumbotron pt-1 pb-3 mt-4">
                 <h1 class="display-4">Portfolio</h1>
                 <hr>
                 <div class="row no-gutters">
-                    <div class="col-12 col-lg-6 pr-3">
-                        <h1 class="display-5 text-center">Small Apps</h1>
-                        <div class="bd-example">
-                            <div id="small-apps" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#small-apps" data-slide-to="0" class="active"></li>
-                                    <li data-target="#small-apps" data-slide-to="1"></li>
-                                    <li data-target="#small-apps" data-slide-to="2"></li>
-                                    <li data-target="#small-apps" data-slide-to="3"></li>
-                                    <li data-target="#small-apps" data-slide-to="4"></li>
-                                    <li data-target="#small-apps" data-slide-to="5"></li>
-                                    <li data-target="#small-apps" data-slide-to="6"></li>
-                                    <li data-target="#small-apps" data-slide-to="7"></li>
-                                    <li data-target="#small-apps" data-slide-to="8"></li>
-                                    <li data-target="#small-apps" data-slide-to="9"></li>
-                                    <li data-target="#small-apps" data-slide-to="10"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/hangman.jpg" class="card-img-top"
-                                                alt="hangman Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Anime Hangman</h5>
-                                                <p class="card-text">A website to play hangman, anime style. Users have
-                                                    a limited number of guesses before they lose and a new word is
-                                                    randomly chosen. A user wins if they guess the word before they run
-                                                    out of guesses.</p>
-                                                <a href="https://github.com/JakeDudum/Word-Guess-Game"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/Word-Guess-Game/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/RPG.png" class="card-img-top"
-                                                alt="Dragon Ball Z RPG Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Dragon Ball Z RPG</h5>
-                                                <p class="card-text">A website to play a dragon ball z themed webbrowser
-                                                    rpg. The user can choose from five different characters and battle
-                                                    their way to victory. Every enemy defeated causes all characters to
-                                                    transform one power level. Enemies have a set counter attack power
-                                                    while a player's attack power stacks with each attack. Defeat all
-                                                    enemies to win!</p>
-                                                <a href="https://github.com/JakeDudum/unit-4-game"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/unit-4-game/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/triviagame.png" class="card-img-top"
-                                                alt="Marvel Trivia Game">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Marvel Trivia</h5>
-                                                <p class="card-text">A simple webbrowser timed trivia game all about the
-                                                    Marvel universe. Users have ten seconds to answer each question and
-                                                    there are ten questions total. After each question users are
-                                                    informed whether or not their answer was correct. Once the quiz is
-                                                    over a result screen shows the user theirscore as well as a button
-                                                    to restart the game (without a page reload).
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/TriviaGame"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/TriviaGame/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/giftastic.png" class="card-img-top"
-                                                alt="Giftastic Website">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">GifTastic</h5>
-                                                <p class="card-text">A website to browse gifs on with style. Users can
-                                                    click any of the premade buttons to load 10 gifs into the iphone
-                                                    display and then click them to play them and stop them. There is
-                                                    also a form on the right side of the site for users to add their own
-                                                    buttons to the list and then be able to click them as well. All of
-                                                    the gifs are loaded from the Giphy website using their API.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/GifTastic"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/GifTastic/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/RPS-Multiplayer.png" class="card-img-top"
-                                                alt="RPS-multiplayer Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">RPS-Multiplayer</h5>
-                                                <p class="card-text">Rock, Paper, Scissors Online Multiplayer! Two
-                                                    players are able to play at any time by joining either player 1 or
-                                                    player 2 with a name input. The center of the site features a chat
-                                                    box for the two players to talk to each other as well as for the
-                                                    site to display who has won. Wins and losses for each side are shown
-                                                    below each player's name and are reset to 0 upon a player leaving
-                                                    the game. To leave the game players can simply close the window the
-                                                    game is being played in which will enable other players to join in
-                                                    their place. Player 2 always goes after Player 1 and only the
-                                                    players can see their button options(other users can simply observe
-                                                    and wait for an open player space).
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/RPS-Multiplayer"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/RPS-Multiplayer/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/liri.gif" class="card-img-top" alt="Liri-Bot Demo">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Liri Bot (Node App)</h5>
-                                                <p class="card-text">This program is a simple liri-bot used to search
-                                                    for concerts using Bands in Town API, songs using Node Spotify API,
-                                                    and movies using OMDb API. Once launched the program asks
-                                                    the user what they want to do and depending upon their selection
-                                                    asks what the name of the concert/song/movie is they wish to search
-                                                    for and then uses API's and npm packages to retrieve the desired
-                                                    information and display it to them with some ASCII art flare. After
-                                                    the information is provided the program stores the display results
-                                                    inside log.txt and then promts the user what they want to do next.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/liri-node-app"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/bamazon.gif" class="card-img-top"
-                                                alt="Bamazon Demo">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Bamazon (Node App)</h5>
-                                                <p class="card-text">Bamazon is a mock storefront that uses MySQL to
-                                                    store and modify inventory of products across various departments.
-                                                    Users can either use bamazonCustomer.js, bamazonManager.js, or
-                                                    bamazonSupervisor.js in order to modify or check the database. Every
-                                                    time the user is asked for input their response is validated using
-                                                    Inquirer's validate function in order to avoid database errors, such
-                                                    as inputing a non-number or an empty response. The app in its
-                                                    entirety runs in the console/terminal.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/Bamazon"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/FriendFinder.png" class="card-img-top"
-                                                alt="FriendFinder Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Friend Finder</h5>
-                                                <p class="card-text">A site to find friends, Friend Finder! The website
-                                                    takes in user input and then lets them know who the best match for
-                                                    them is. The user is then added to an array in the back-end in order
-                                                    to improve future matches with new users. There is no database being
-                                                    used to store user information, only a simple javascript array. An
-                                                    API link and a GitHub link can be found at the bottom of both the
-                                                    homepage and survey. The API link will display all user json data
-                                                    and the GitHub link takes the user to the repository.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/FriendFinder"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://bloc-chesterfield-78508.herokuapp.com/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/Burger_Town.png" class="card-img-top"
-                                                alt="Burger Town Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Burger Town</h5>
-                                                <p class="card-text">A simple and straight forward site where you can
-                                                    EAT DA BURGER! Users can add burgers using the form located in the
-                                                    center of the page which will then add them to the list of burgers
-                                                    to be devoured. Upon clicking devour for any burger it is then moved
-                                                    over to the list of burgers devoured. All burgers both devoured and
-                                                    yet to be devoured are persistently tracked using a MySQL database.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/burger"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://boiling-eyrie-34449.herokuapp.com/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/Scraper.png" class="card-img-top"
-                                                alt="PC Gamer Scaper">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">PC Gamer Scraper</h5>
-                                                <p class="card-text">This site scrapes all of the articles found on PC
-                                                    Gamer's site and displays them in one location. Users can hit the
-                                                    scrape button to scrape for new articles and hit the article API
-                                                    button to see all of the scraped json data. Users can also select
-                                                    any of the articles read more button to go the
-                                                    full articles on PC Gamer's site. There is also a notes button for
-                                                    each article that allows anyone to set a title and leave a note
-                                                    inside the database for that article.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/PC-Gamer-Scaper"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://tranquil-badlands-33243.herokuapp.com/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/Clicky.png" class="card-img-top"
-                                                alt="One Piece Clciky Game">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Clicky Game</h5>
-                                                <p class="card-text">A very simple react site to play a very clicky
-                                                    game. The one goal of the game is to click on every picture only
-                                                    once. If a user clicks correctly or incorrectly they are notified in
-                                                    the center of the navbar and their score/highscore are updated.
-                                                    Every time the user clicks on an image they all shuffle randomly.
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/clicky-game"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/clicky-game/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#small-apps" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#small-apps" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card bg-secondary">
+                            <img src="assets/images/RPS-Multiplayer.png" class="card-img-top"
+                                alt="RPS-multiplayer Site">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">RPS-Multiplayer</h5>
+                                <p class="card-text">An online multiplayer version of Rock-Paper-Scissors. Only two
+                                    players can play at any given time and only those two players can use the chat
+                                    functionality of the site. Player 1 always goes first followed by Player 2.
+                                </p>
+                                <a href="https://github.com/JakeDudum/RPS-Multiplayer" target="_blank"
+                                    class="btn btn-primary">Github
+                                    Repo</a>
+                                <a href="https://jakedudum.github.io/RPS-Multiplayer/" target="_blank"
+                                    class="btn btn-primary">Deployed
+                                    Site</a>
                             </div>
                         </div>
+                        <h3 class="text-center">Tech Used</h3>
+                        <ul class="row no-gutters justify-content-around">
+                            <div class="col-5">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Javascript</li>
+                            </div>
+                            <div class="col-5">
+                                <li class="list-group-item">Firebase</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">Jquery</li>
+                            </div>
+                        </ul>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <h1 class="display-5 text-center">Projects</h1>
-                        <div class="bd-example">
-                            <div id="projects" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#projects" data-slide-to="0" class="active"></li>
-                                    <li data-target="#projects" data-slide-to="1"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/Where2P.PNG" class="card-img-top"
-                                                alt="Where2P Site">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Where2P</h5>
-                                                <p class="card-text">An app designed by myself and fellow classmates
-                                                    Darryl, Hallie, and Adrienne to help people find a bathroom quick.
-                                                    The app uses multiple API's including Google Maps API, Yelp API, and
-                                                    Google Places API in order to help the user find the closest
-                                                    bathroom available. The app also features firebase integration for
-                                                    user reviews.</p>
-                                                <a href="https://github.com/JakeDudum/Where2p"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://jakedudum.github.io/Where2p/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card bg-secondary">
-                                            <img src="assets/images/Bark.png" class="card-img-top" alt="Bark Homepage">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Bark</h5>
-                                                <p class="card-text">Bark! Voice what's going on around you on our
-                                                    location based social platform. New users can create an account by
-                                                    entering a valid email, a password, a username and hitting
-                                                    signup. Returning users can enter the same three fields and hit
-                                                    login to be validated. Once logged a user must allow the site to
-                                                    access their location in order to grab posts in the local area. From
-                                                    the home page users can view the latest posts from all categories or
-                                                    filter them by category as well as make posts and go to thier own
-                                                    profile page to see all of their posts. Making posts is simple and
-                                                    straight forward, simply fill out the required fields and Bark!
-                                                </p>
-                                                <a href="https://github.com/JakeDudum/Bark"
-                                                    class="btn btn-primary mb-3">Github Repo</a>
-                                                <a href="https://tranquil-bastion-82369.herokuapp.com/"
-                                                    class="btn btn-primary mb-3">Deployed Site</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <a class="carousel-control-prev" href="#projects" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#projects" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card bg-secondary">
+                            <img src="assets/images/Where2P.PNG" class="card-img-top" alt="Where2P Site">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Where2P</h5>
+                                <p class="card-text">An app designed to help people find a bathroom quick.
+                                    The app uses multiple API's including Google Maps API, Yelp API, and
+                                    Google Places API in order to help the user find the closest
+                                    bathroom available and features user reviews as well.</p>
+                                <a href="https://github.com/JakeDudum/Where2p" target="_blank"
+                                    class="btn btn-primary">Github
+                                    Repo</a>
+                                <a href="https://jakedudum.github.io/Where2p/" target="_blank"
+                                    class="btn btn-primary">Deployed
+                                    Site</a>
                             </div>
                         </div>
+                        <h3 class="text-center">Tech Used</h3>
+                        <ul class="row no-gutters justify-content-around">
+                            <div class="col-5">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Javascript</li>
+                            </div>
+                            <div class="col-5">
+                                <li class="list-group-item">Firebase</li>
+                                <li class="list-group-item">Materialize</li>
+                                <li class="list-group-item">Jquery</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card bg-secondary">
+                            <img src="assets/images/Bark.png" class="card-img-top" alt="Bark Homepage">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Bark</h5>
+                                <p class="card-text">An app inspired by Yik-Yak. Users can sign up for account and voice
+                                    whatever they want to those in their city. The site features a basic user profile to
+                                    view old posts and a few simple categories along with a like counter.
+                                </p>
+                                <a href="https://github.com/JakeDudum/Bark" target="_blank"
+                                    class="btn btn-primary">Github Repo</a>
+                                <a href="https://tranquil-bastion-82369.herokuapp.com/" target="_blank"
+                                    class="btn btn-primary">Deployed
+                                    Site</a>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Tech Used</h3>
+                        <ul class="row no-gutters justify-content-around">
+                            <div class="col-5">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Javascript</li>
+                                <li class="list-group-item">Node.js</li>
+                            </div>
+                            <div class="col-5">
+                                <li class="list-group-item">MySQL</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">Jquery</li>
+                                <li class="list-group-item">Heroku</li>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="contact" class="jumbotron pt-1 mt-5">
+
+        <div id="contact" class="jumbotron pt-1 pb-3 mt-4">
             <h1 class="display-4">Contact</h1>
             <hr>
             <div class="row justify-content-around">
@@ -393,13 +172,13 @@
                                 <img src="assets/images/linkedin-logo.png" class="logo" alt="placeholder">
                             </div>
                             <div class="back">
-                                <a href="https://www.linkedin.com/in/jake-dudum-45a967185/" target="blank"
+                                <a href="https://www.linkedin.com/in/jake-dudum-45a967185/" target="_blank"
                                     class="button middle">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                    LindedIn</a>
+                                    LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -411,7 +190,7 @@
                                 <img src="assets/images/github-logo.svg" id="github" class="logo" alt="placeholder">
                             </div>
                             <div id="github-back" class="back">
-                                <a href="https://github.com/JakeDudum" target="blank" class="button middle">
+                                <a href="https://github.com/JakeDudum" target="_blank" class="button middle">
                                     <span></span>
                                     <span></span>
                                     <span></span>
