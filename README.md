@@ -2,7 +2,7 @@
 
 ![alt text](assets/images/Portfolio.png "Portfolio landing page")
 
-A site with all of my noteworthy projects and my resume.
+A site with all of my noteworthy projects, my resume, linkedin, github, and e-mail.
 
 # Link to Deployed Site
 - [My-Portfolio](https://jakedudum.github.io/My-Portfolio/)
